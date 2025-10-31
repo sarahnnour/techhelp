@@ -1,0 +1,17 @@
+node_modules
+.git
+*.log
+.env.local
+.DS_Store
+.vscode
+*.test.*
+*.spec.*
+coverage
+.turbo
+.next
+src
+server
+client
+shared
+drizzle
+patches
