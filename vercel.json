@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm run build",
+  "installCommand": "pnpm install",
+  "outputDirectory": "dist/public",
+  "framework": null,
+  "routes": [
+    {
+      "src": "/api/oauth/callback",
+      "dest": "dist/index.js"
+    },
+    {
+      "src": "/api/trpc/(.*)",
+      "dest": "dist/index.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "dist/index.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
